@@ -55,7 +55,6 @@ with col1:
 
         .content h3 {
             font-size: 1em;
-            color: #666;
             margin-top: 10px;
         }
 

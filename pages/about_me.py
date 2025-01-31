@@ -11,7 +11,7 @@ def load_lottieurl(url):
 
 lottie_coder = load_lottieurl('https://lottie.host/0e6cb557-2b89-48c7-9eb6-ba09a35b7011/37jvcEAeTs.json')
 
-col1, col2 = st.columns([1.2,1], gap='small')
+col1, col2 = st.columns([1.3,1], gap='small')
 with col1:
     st.markdown(
         """
@@ -91,7 +91,6 @@ with col1:
         display: flex;
         align-items: center;
         font-size: 12px;
-        color: #333;
     }
     .contact-icons .email {
         text-decoration: none;

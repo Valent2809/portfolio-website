@@ -5,6 +5,22 @@ st.set_page_config(layout='wide')
 
 st.markdown("""
 <style>
+/* Default Light Mode */
+:root {
+    --text-color: black;
+    --bg-color: white;
+    --timeline-line: #e5e5e5;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: white;
+        --bg-color: #1e1e1e;
+        --timeline-line: #555;
+    }
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -16,7 +32,7 @@ st.markdown("""
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #e5e5e5;
+    background-color: var(--timeline-line);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -28,6 +44,7 @@ st.markdown("""
     position: relative;
     width: 50%;
     box-sizing: border-box;
+    color: var(--text-color); /* Apply text color */
 }
 
 .container.left {
@@ -45,13 +62,14 @@ st.markdown("""
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: white;
+    background-color: var(--bg-color);
     border-radius: 50%;
     top: 15px;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--text-color);
 }
 
 .container.left::after {
@@ -64,7 +82,7 @@ st.markdown("""
 
 .content {
     padding: 15px;
-    background-color: white;
+    background-color: var(--bg-color);
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -72,18 +90,24 @@ st.markdown("""
 .content h2 {
     font-size: 1.2em;
     font-weight: bold;
+    color: var(--text-color); /* Adjust for dark mode */
     margin-bottom: -15px; 
 }
 
 .content h3 {
     font-size: 1em;
-    color: #666;
+    color: var(--text-color);
 }
 
 .content .date {
-    color: #666;
+    color: var(--text-color);
     font-size: 1em;
     margin-top: -13px;
+}
+
+.content p {
+    color: var(--text-color); /* Ensure text is visible */
+    font-size: 12px;
 }
 
 @media screen and (max-width: 600px) {
@@ -169,8 +193,8 @@ with col4:
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Singapore_Management_University_Logo.png" alt="Logo" style="width: 75px; margin-right: 10px;">
             <div>
                 <h4 style="margin: 0; font-size:17px">Singapore Management University</h4>
-                <p style="margin-top: -15px;font-size:13px;color: #666;"><strong>Bachelor of Computer Science</strong></p>
-                <p style="margin-top: -20px;font-size:13px;color: #666;"><strong>Aug 2021 – May 2025</strong></p>
+                <p style="margin-top: -15px;font-size:13px;"><strong>Bachelor of Computer Science</strong></p>
+                <p style="margin-top: -20px;font-size:13px;"><strong>Aug 2021 – May 2025</strong></p>
                 <p style="margin-top: -13px;font-size:13px;"><strong>Grade: Magna Cum Laude/Highest Distinction  </strong></p>
                 <p style="margin-top: -17px;font-size:13px;"><strong>Majors: AI & Business Analyst  </strong></p>
                 <p style="margin-top: -17px;font-size:13px;"><strong>GPA: 3.61 / 4.00  </strong></p>
