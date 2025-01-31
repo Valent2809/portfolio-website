@@ -5,3 +5,4 @@ requests
 google-api-core
 google-generativeai
 pypdf==5.2.0
+pysqlite3-binary

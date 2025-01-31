@@ -109,8 +109,8 @@ with col1:
             </div>
         </div>
     """,unsafe_allow_html=True)
-    col5.image('media/SocialAnalyticsSentiment.png',use_container_width=True)
-    col5.image('media/SocialAnalytics.png',use_container_width=True)
+    col5.image('media/SocialAnalyticsSentiment.PNG',use_container_width=True)
+    col5.image('media/SocialAnalytics.PNG',use_container_width=True)
 
     container4 = st.container(border=True)
     col8,col9 = container4.columns(2)
