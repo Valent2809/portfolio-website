@@ -4,6 +4,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 from google.api_core.exceptions import ResourceExhausted
+import streamlit as st
 
 load_dotenv()
 
@@ -43,7 +44,7 @@ def make_rag_prompt(query, relevant_passage):
   return prompt
 
 def prompt_gemini(prompt):
-    gemini_api_key = os.getenv('gemini_api_key')
+    gemini_api_key = st.secrets["gemini_api_key"]
     if not gemini_api_key:
         raise ValueError("Gemini API Key not provided. Please provide GEMINI_API_KEY as an environment variable")
     genai.configure(api_key=gemini_api_key)
