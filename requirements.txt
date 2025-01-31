@@ -5,4 +5,3 @@ requests
 google-api-core
 google-generativeai
 pypdf==5.2.0
-sqlite3 >= 3.35.0
