@@ -1,12 +1,8 @@
 import chromadb
 from rag.chromadb_create import GeminiEmbeddingFunction
 import google.generativeai as genai
-from dotenv import load_dotenv
-import os
 from google.api_core.exceptions import ResourceExhausted
 import streamlit as st
-
-load_dotenv()
 
 def load_chroma_collection(path, name):
     """

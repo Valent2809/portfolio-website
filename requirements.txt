@@ -1,0 +1,7 @@
+chromadb==0.6.3
+streamlit==1.41.1
+streamlit-lottie==0.0.5
+requests
+google-api-core
+google-generativeai
+pypdf==5.2.0

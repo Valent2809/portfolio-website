@@ -3,12 +3,9 @@ import re
 import google.generativeai as genai
 from chromadb import Documents, EmbeddingFunction, Embeddings
 import chromadb
-from dotenv import load_dotenv
-import os
 from typing import List
 import streamlit as st
 
-load_dotenv()
 
 def load_pdf(file_path):
     """
