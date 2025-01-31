@@ -15,7 +15,7 @@ data_science_project_page = st.Page(
 
 software_development_page = st.Page(
     page = "pages/swd.py",
-    title = "Software Development Project",
+    title = "Software Dev Project",
     icon = ":material/code:",
 )
 
@@ -25,22 +25,15 @@ education_work_exp_page = st.Page(
     icon = ":material/work_history:",
 )
 
-resume_page = st.Page(
-    page = "pages/resume.py",
-    title = "Resume",
-    icon = ":material/description:",
-)
-
 chatbot_page = st.Page(
     page = "pages/chatbot.py",
     title = "Talk to my Chatbot",
     icon = ":material/smart_toy:",
 )
 
-# Navigation setup with sections
 pg = st.navigation(
     {
-        "Info":[about_page, education_work_exp_page,resume_page,chatbot_page],
+        "Info":[about_page, education_work_exp_page,chatbot_page],
         "Projects":[data_science_project_page,software_development_page]
     }
 )

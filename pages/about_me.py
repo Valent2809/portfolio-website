@@ -3,7 +3,6 @@ import requests
 from streamlit_lottie import st_lottie
 
 st.set_page_config(layout='wide')
-
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -12,13 +11,13 @@ def load_lottieurl(url):
 
 lottie_coder = load_lottieurl('https://lottie.host/0e6cb557-2b89-48c7-9eb6-ba09a35b7011/37jvcEAeTs.json')
 
-col1, col2 = st.columns(2, gap='small')
+col1, col2 = st.columns([1.2,1], gap='small')
 with col1:
     st.markdown(
         """
         <style>
         .gradient-text {
-            font-size: 48px;
+            font-size: 35px;
             font-weight: bold;
             background: linear-gradient(90deg, #FF5733, #FFBD33, #75FF33);
             -webkit-background-clip: text;
@@ -27,7 +26,7 @@ with col1:
             padding: 0;
         }
         .normal-text {
-            font-size: 48px;
+            font-size: 35px;  /* Ensure this applies to "Hello. I'm" */
             font-weight: bold;
             margin: 0; /* Removes extra margins */
             padding: 0;
@@ -37,14 +36,24 @@ with col1:
         }
         </style>
         <div class="text-container">
-            <h1 class="normal-text">Hello. I'm <span class="gradient-text">Valentino Ong</span></h1>
+            <h1> <span class="normal-text">Hello. I'm </span> <span class="gradient-text">Valentino Ong</span></h1>
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    st.subheader('Aspiring Data Analyst/Scientist')
-    st.write("I’m a Year 4 Computer Science student at Singapore Management University, specializing in AI and Business Analytics. I am deeply passionate about transforming data into actionable insights that solve real-world problems. Equipped with skills in Python, SQL, data visualization and Machine learning, I thrive on uncovering patterns and delivering impactful solutions. With a strong foundation in teamwork and leadership, I am eager to drive innovation and create meaningful change through the power of data.")
+    st.markdown('##### Aspiring Data Analyst/Scientist')
+    st.markdown("""
+    <style>
+        .small-font {
+            font-size: 12px; /* Adjust the font size here */
+        }
+    </style>
+    <div class="small-font">
+        I’m a Year 4 Computer Science student at Singapore Management University, specializing in AI and Business Analytics. I am deeply passionate about transforming data into actionable insights that solve real-world problems. Equipped with skills in Python, SQL, data visualization, and machine learning, I thrive on uncovering patterns and delivering impactful solutions. With a strong foundation in teamwork and leadership, I am eager to drive innovation and create meaningful change through the power of data.
+    </div>
+    """, unsafe_allow_html=True)
+
 
     # Contact Me Section
     st.markdown(
@@ -54,39 +63,41 @@ with col1:
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 10px; /* Space between elements */
+        gap: 6px; /* Space between elements */
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 12px;
     }
     .contact-icons a {
         text-decoration: none;
         color: #333;
         background-color: #f0f0f0;
-        padding: 6px 12px;
-        border-radius: 20px;
+        padding: 4px 8px;
+        border-radius: 15px;
         display: inline-flex;
         align-items: center;
         transition: background-color 0.3s;
+        font-size: 12px;
     }
     .contact-icons a:hover {
         background-color: #e0e0e0;
     }
     .contact-icons img {
-        width: 17px;
-        height: 17px;
-        margin-right: 6px;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
     }
     .contact-icons p {
         margin: 0;
         display: flex;
         align-items: center;
-        font-size: 15px;
+        font-size: 12px;
         color: #333;
     }
     .contact-icons .email {
         text-decoration: none;
         color: #0073e6; /* Email link color */
         font-weight: normal;
+        font-size: 12px;
     }
 
     .contact-icons .email:hover {
@@ -132,7 +143,17 @@ with col2:
 st.divider()
 
 # Layout for Skills Section
-st.title("My Skills")
+st.markdown(
+    """
+    <style>
+    h2 {
+        font-weight: bold !important;  /* Makes the text bold */
+    }
+    </style>
+    ## My Skills
+    """,
+    unsafe_allow_html=True
+)
 # Skills and corresponding logos
 skills = [
     ("Python", "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"),
@@ -163,7 +184,7 @@ for idx, (skill, logo_url) in enumerate(skills):
         col = cols[new_idx]
         html = f"""
         <div style="text-align: center; font-family: system-ui, -apple-system, sans-serif; padding-bottom:15px">
-            <img src="{logo_url}" alt="{skill} Logo" style="height: 100px; object-fit: contain;">
+            <img src="{logo_url}" alt="{skill} Logo" style="height: 75px; object-fit: contain;">
             <div>
                 <span style="font-size: 1.5rem;">{skill}</span>
             </div>
@@ -175,9 +196,9 @@ for idx, (skill, logo_url) in enumerate(skills):
         col = cols[new_idx]
         html = f"""
         <div style="text-align: center; font-family: system-ui, -apple-system, sans-serif; padding-bottom:15px">
-            <img src="{logo_url}" alt="{skill} Logo" style="height: 100px; object-fit: contain;">
+            <img src="{logo_url}" alt="{skill} Logo" style="height: 75px; object-fit: contain;">
             <div>
-                <span style="font-size: 1.5rem;">{skill}</span>
+                <span style="font-size: 1.125rem;">{skill}</span>
             </div>
         </div>
         """
@@ -220,8 +241,27 @@ with col3:
     navigate_image()
 
 with col4:
-    st.title('Interest & Hobby')
-    st.write('Being an inquisitive individual, I like to learn and explore new things such as through various certifications and teach as well! I also used to be a tchoukball and rugby player representing my school. Additionally, I enjoy going to the gym and playing games.')
+    st.markdown(
+    """
+    <style>
+    h2 {
+        font-weight: bold !important;  /* Makes the text bold */
+    }
+    </style>
+    ## Interest & Hobby
+    """,
+    unsafe_allow_html=True
+    )
+    st.markdown("""
+        <style>
+            .small-font {
+                font-size: 14px; /* You can adjust the font size as needed */
+            }
+        </style>
+        <div class="small-font">
+            Being an inquisitive individual, I like to learn and explore new things such as through various certifications and teach as well! I also used to be a tchoukball and rugby player representing my school. Additionally, I enjoy going to the gym and playing games.
+        </div>
+    """, unsafe_allow_html=True)
     st.markdown(
         """
         <style>
@@ -229,7 +269,7 @@ with col4:
             background-color: #f2f2f2;  /* Light background */
             border-left: 5px solid #FF5733;  /* Colorful left border */
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 13px;
             margin-top: 20px;
             font-style: italic;
             color: #333; /* Dark text color */
