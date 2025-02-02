@@ -11,7 +11,7 @@ def load_lottieurl(url):
 
 lottie_coder = load_lottieurl('https://lottie.host/0e6cb557-2b89-48c7-9eb6-ba09a35b7011/37jvcEAeTs.json')
 
-col1, col2 = st.columns([1.3,1], gap='small')
+col1, col2 = st.columns([1.4,1], gap='small')
 with col1:
     st.markdown(
         """
@@ -156,13 +156,13 @@ st.markdown(
 # Skills and corresponding logos
 skills = [
     ("Python", "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"),
-    ("Java", "https://www.vectorlogo.zone/logos/java/java-icon.svg"),
     ("MySQL", "https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"),
-    ("Pyspark", "https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg"),
     ("Pandas", "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"),
-    ("Tableau", "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png"),
+    ("Pyspark", "https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg"),
     ("Scikit-Learn", "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"),
     ("TensorFlow", "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"),
+    ("Tableau", "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png"),
+    ("Java", "https://www.vectorlogo.zone/logos/java/java-icon.svg"),
     ("Docker", "https://www.vectorlogo.zone/logos/docker/docker-icon.svg"),
     ("Kubernetes", "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg"),
     ("FastAPI", "https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg"),
