@@ -197,7 +197,6 @@ with col4:
                 <p style="margin-top: -20px;font-size:13px;"><strong>Aug 2021 – May 2025</strong></p>
                 <p style="margin-top: -13px;font-size:13px;"><strong>Grade: Magna Cum Laude/Highest Distinction  </strong></p>
                 <p style="margin-top: -17px;font-size:13px;"><strong>Majors: AI & Business Analyst  </strong></p>
-                <p style="margin-top: -17px;font-size:13px;"><strong>GPA: 3.61 / 4.00  </strong></p>
             </div>
         </div>
         """,

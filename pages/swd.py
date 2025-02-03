@@ -65,28 +65,28 @@ with col1:
     </style>
     """,unsafe_allow_html=True)
     col2.markdown("""
-    <div class="content">
-            <h2>Capstone Project: Twinsies</h2>
-            <div style="display: flex; align-items: center;">
-                  <h3>Made with:</h3>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px; margin-left:-10px;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg" alt="Tool 1" style="width: 50px; height: auto; margin-right: 10px;">
-                  <img src="https://img.icons8.com/?size=100&id=wPohyHO_qO1a&format=png&color=000000" alt="Tool 1" style="width: 25px; height: auto; margin-right: 10px;">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="Tool 1" style="width: 40px; height: auto; margin-right: 10px;">
-                  <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Tool 1" style="width: 40px; height: auto; margin-right: 10px;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="Tool 1" style="width: 50px; height: auto; margin-right: 10px;">
+        <div class="content">
+                <h2>Capstone Project: Twinsies</h2>
+                <div style="display: flex; align-items: center;">
+                      <h3>Made with:</h3>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px;margin-left:-10px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg" alt="Tool 1" style="width: 45px; height: auto; margin-right: 10px;">
+                      <img src="https://img.icons8.com/?size=100&id=wPohyHO_qO1a&format=png&color=000000" alt="Tool 1" style="width: 25px; height: auto; margin-right: 10px;">
+                      <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="Tool 1" style="width: 40px; height: auto; margin-right: 10px;">
+                      <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Tool 1" style="width: 40px; height: auto; margin-right: 10px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="Tool 1" style="width: 40px; height: auto; margin-right: 10px;">
+                </div>
+                <p> Full-stack developer utilizing FastAPI and ReactJS, developed Gen AI-powered digital twin for personalized education, delivering tailored learning recommendations across various grading components</p>
+                <p> As the project lead, led a cross-functional team using Agile Scrum and acted as the primary liaison with sponsors, ensuring the team understood the requirements clearly.</p>
+                <p> Deployed with docker and implemented a CI/CD pipeline with comprehensive integration tests </p>
+                <p> spearheaded Gen AI tasks, including prompt engineering and output optimization to enhance recommendation accuracy. </p>
+                <div class="link-icons">
+                    <a href="https://www.youtube.com/watch?v=bazoeIyg1ls&feature=youtu.be" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="demo twinsies" style="width: 20px; height: auto;">
+                    <span style="font-size: 0.8em;">Demo</span> 
+                    </a>
+                </div>
             </div>
-            <p style="margin-top:-15px"> Full-stack developer utilizing FastAPI and ReactJS, developed Gen AI-powered digital twin for personalized education, delivering tailored learning recommendations across various grading components</p>
-            <p> As the project lead, led a cross-functional team using Agile Scrum and acted as the primary liaison with sponsors, ensuring the team understood the requirements clearly.</p>
-            <p> Deployed with docker and implemented a CI/CD pipeline with comprehensive integration tests </p>
-            <p> spearheaded Gen AI tasks, including prompt engineering and output optimization to enhance recommendation accuracy. </p>
-            <div class="link-icons">
-                <a href="https://www.youtube.com/watch?v=bazoeIyg1ls&feature=youtu.be" target="_blank">
-                <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="demo twinsies" style="width: 20px; height: auto;">
-                <span style="font-size: 0.8em;">Demo</span> 
-                </a>
-            </div>
-        </div>
     """,unsafe_allow_html=True)
     col3.image('media/Twinsies.PNG',use_container_width=True)
 
@@ -97,7 +97,7 @@ with col1:
             <h2>Ellipsis Tech series Hackathon 2024: Petal</h2>
             <div style="display: flex; align-items: center;"> 
                   <h3>Made with:</h3>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px;margin-left:-10px;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px; margin-left:-10px;">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg" alt="Tool 1" style="width: 50px; height: auto; margin-right: 10px;">
                   <img src="https://img.icons8.com/?size=100&id=wPohyHO_qO1a&format=png&color=000000" alt="Tool 1" style="width: 25px; height: auto; margin-right: 10px;">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Tool 1" style="width: 45px; height: auto; margin-right: 10px;">
