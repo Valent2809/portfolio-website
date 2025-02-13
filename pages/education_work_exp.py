@@ -228,7 +228,7 @@ with col4:
     """, unsafe_allow_html=True)
     
 with col5:
-    st.markdown("<h1 style='text-align: center; font-size: 35px;'>Cerfitication</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 35px;'>Certification</h1>", unsafe_allow_html=True)
     st.markdown("""
     <style>
         .small-font {
