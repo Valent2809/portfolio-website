@@ -1,7 +1,7 @@
 import streamlit as st
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 about_page = st.Page(
     page = "pages/about_me.py",
@@ -36,7 +36,7 @@ chatbot_page = st.Page(
 
 pg = st.navigation(
     {
-        "Info":[about_page, education_work_exp_page,chatbot_page],
+        "Info":[about_page,chatbot_page],
         "Projects":[data_science_project_page,software_development_page]
     }
 )
