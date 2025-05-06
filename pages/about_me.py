@@ -50,7 +50,7 @@ with col1:
         }
     </style>
     <div class="small-font">
-        I’m a Year 4 Computer Science student at Singapore Management University, specializing in AI and Business Analytics. I am deeply passionate about transforming data into actionable insights that solve real-world problems. Equipped with skills in Python, SQL, data visualization, and machine learning, I thrive on uncovering patterns and delivering impactful solutions. With a strong foundation in teamwork and leadership, I am eager to drive innovation and create meaningful change through the power of data.
+        I’m a recent graduate Computer Science student from Singapore Management University, specializing in AI and Business Analytics. I am deeply passionate about transforming data into actionable insights that solve real-world problems. Equipped with skills in Python, SQL, data visualization, and machine learning, I thrive on uncovering patterns and delivering impactful solutions. With a strong foundation in teamwork and leadership, I am eager to drive innovation and create meaningful change through the power of data.
     </div>
     """, unsafe_allow_html=True)
 
@@ -129,7 +129,7 @@ with col1:
         </a>
         <!-- Phone Number -->
         <p>📞 +65 9164 2003</p>
-        <a href="mailto:valentinoo.2021@scis.smu.edu.sg" class="email">📧 valentinoo.2021@scis.smu.edu.sg</a>
+        <a href="mailto:valentinoong61@gmail.com" class="email">📧 valentinoo.2021@scis.smu.edu.sg</a>
     </div>
 
     """,

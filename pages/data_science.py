@@ -90,6 +90,30 @@ with col1:
     col4,col5 = container2.columns(2)
     col4.markdown("""
     <div class="content">
+            <h2>LinkedOut: Resume & Job Matching Recommendation System</h2>
+            <div style="display: flex; align-items: center;"> 
+                  <h3>Made with:</h3>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Tool 1" style="width: 30px; height: auto; margin-right: 10px;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg" alt="Tool 1" style="width: 50px; height: auto; margin-right: 10px;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Tool 1" style="width: 45px; height: auto; margin-right: 10px;">
+            </div>
+            <p>Designed and implemented a semantic recommendation system to streamline the recruitment process by matching resumes with job descriptions and vice versa. The core of the system leveraged Doc2Vec embeddings to capture contextual relationships in textual data and FAISS for fast and scalable similarity search. This enabled both job seekers and recruiters to perform intelligent searches—candidates could discover relevant opportunities, while recruiters could efficiently identify suitable applicants. Developed and deployed backend RESTful APIs using FastAPI, enabling seamless integration of resume-to-job and job-to-resume matching functionality into recruitment platforms.</p>
+            <div class="link-icons">
+                <a href="https://docs.google.com/presentation/d/1x-BbGk6MEI_4fY5JWqOma4WJn38Kq0vM/edit?usp=sharing&ouid=114827466311946016594&rtpof=true&sd=true" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Microsoft_PowerPoint_Logo.png" style="width: 20px; height: auto">
+                <span style="font-size: 0.8em;">Presentation Slides</span> 
+                </a>
+            </div>
+        </div>
+    """,unsafe_allow_html=True)
+    col5.image('media/LinkedOutFlow.PNG',use_container_width=True)
+    col5.image('media/LinkedOutSearch.PNG',use_container_width=True)
+
+    container2 = st.container(border=True)
+    col4,col5 = container2.columns(2)
+    col4.markdown("""
+    <div class="content">
             <h2>Social Analytics of reviews for Lazada</h2>
             <div style="display: flex; align-items: center;"> 
                   <h3>Made with:</h3>
