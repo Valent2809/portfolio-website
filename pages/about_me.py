@@ -129,7 +129,7 @@ with col1:
         </a>
         <!-- Phone Number -->
         <p>📞 +65 9164 2003</p>
-        <a href="mailto:valentinoong61@gmail.com" class="email">📧 valentinoo.2021@scis.smu.edu.sg</a>
+        <a href="mailto:valentinoong61@gmail.com" class="email">📧 valentinoong61@gmail.com</a>
     </div>
 
     """,
@@ -417,6 +417,7 @@ with col4:
     <div class="small-font">
         <h5>Award</h5>
         <ul>
+            <li>Dean's list AY24-25</li>
             <li>Dean's list AY23-24</li>
             <li>Trailblazer ASEAN Scholarship - 2024, 2023, 2022 and 2021</li>
             <li>Ellipsis Tech Series 2024 Most creative award</li>
